@@ -16,6 +16,14 @@ function init() {
                 message: "What is the title of the project?",
                 name: "title",
                 default: "Title"
+            },
+            {
+                type: "list",
+                message: "What is the license of the project?",
+                name: "license",
+                default: "MIT",
+                choices: ["MIT", "Open"]
+
             }
         ])
         .then((answers) => {
